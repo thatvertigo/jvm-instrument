@@ -1,0 +1,16 @@
+[package]
+name = "jvm-instrument"
+version = "0.1.0"
+edition = "2024"
+description = "java.lang.instrument for Rust code loaded into a running JVM, without a Java agent"
+license = "Apache-2.0"
+
+[dependencies]
+jni = "0.22.4"
+log = "0.4"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_LibraryLoader"] }
