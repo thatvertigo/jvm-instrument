@@ -4,6 +4,9 @@ version = "0.1.0"
 edition = "2024"
 description = "java.lang.instrument for Rust code loaded into a running JVM, without a Java agent"
 license = "Apache-2.0"
+keywords = ["java", "jvm", "instrumentation", "javaagent", "jvmti"]
+categories = ["development-tools::ffi", "development-tools::profiling"]
+repository = "https://github.com/thatvertigo/jvm-instrument"
 
 [dependencies]
 jni = "0.22.4"
