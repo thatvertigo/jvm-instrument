@@ -17,3 +17,11 @@ libc = "0.2"
 
 [target.'cfg(windows)'.dependencies]
 windows-sys = { version = "0.61", features = ["Win32_Foundation", "Win32_System_LibraryLoader"] }
+
+[dev-dependencies]
+ctor = "0.6"
+env_logger = "0.11"
+
+[[example]]
+name = "classdumper"
+crate-type = ["cdylib"]
